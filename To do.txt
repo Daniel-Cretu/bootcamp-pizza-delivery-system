@@ -1,0 +1,161 @@
+################################################################################################################################
+
+Topic: Startup for pizza delivery system
+
+################################################################################################################################
+Todo:
+
+1. Requirements:
+	1.1 - Functional Requirements
+		1.1.1 - User should be able to add items to it's shopping cart
+			1.2.1.1 - Items should be either single items with some specifications(nr of items etc.) or full multi-item sets
+		1.1.2 - User should be able to order selected items
+		1.1.3 - Administrator should be able to add/modify/delete products
+	1.2 - HTML/CSS Pages & priority:
+		1.2.1 - Home page
+			1.1.1.1 - Carousel
+			1.1.1.2 - 4 precreated menus
+			1.1.1.3 - Last two blog posts
+		1.2.2 - Menu page
+			1.1.2.1 - Left filter menu
+			1.1.2.2 - Content items
+			1.1.2.3 - Item design
+		1.2.3 - BLog(news) page
+			1.1.3.1 - Infinite scroller
+			1.1.3.2 - Post design with header, picture and description
+			1.1.3.3 - Description should be with set height and expanded on click
+		1.2.4 - About page
+			1.1.4.1 - A small description about project
+			1.1.4.2 - Couple of photos with streets
+		1.2.5 - Contact page
+			1.1.5.1 - Contact info
+		1.2.6 - Shopping cart page
+			1.1.6.1 - Shipping cart dropdown menu with order button
+			1.1.6.2 - Order button that transfers to finish order page 
+		1.2.7 - Map page
+			1.1.7.1 - Add map
+			1.1.7.2 - Add locations with streets at the bottom(just like 1.1.4.2)
+			1.1.7.3 - Add marks on maps
+		1.2.8 - Chooze pizza components page
+			1.1.8.1 - Add n sliced pizza
+				1.1.8.1.1 - Each slice clickable
+				1.1.8.1.2 - After click appears a list of items you can choose
+			1.1.8.2 - Add pizza to order
+	1.3 - Database:
+		1.3.1 - Create tables
+	1.4 - API:
+		1.4.1 - Base API mechanic
+			1.4.1.1 - GET /products/top10
+			1.4.1.2 - GET /products
+			1.4.1.3 - GET /products/{producId}
+			1.4.1.4 - POST /products
+			1.4.1.5 - PATCH /products/{producId}
+			1.4.1.6 - DELETE /products/{producId}
+	1.4 - PHP:
+		1.4.1 - Home page
+			1.4.1.1 - Select top 3 elements using API. And order alphabetically
+			1.4.1.2 - Select already created menus from database using API. (not sure how to)
+			1.4.1.3 - Select last two posts using API
+		1.4.2 - Menu page
+			1.4.2.1 - Select filter items from database
+			1.4.2.2 - Link filter with content items select
+			1.4.2.3 - Add item to shopping cart (database table using user id to separate the order)
+		1.4.3 - BLog(news) page
+			1.4.3.1 - Select post data
+			1.4.3.2 - Infinite scroller of posts
+		1.4.4 - About page
+			1.4.4.1 - looks like nothing to add
+		1.4.5 - Contact page
+			1.4.5.1 - looks like nothing to add
+		1.4.6 - Shopping cart page
+			1.4.6.1 - Display selected by user items
+			1.4.6.2 - Order button link with order popup form and place the order
+		1.4.7 - Map page
+			1.4.7.1 - not sure what to do with it for now
+		1.4.8 - Chooze pizza components page
+			1.4.8.1 - Add a list of ingredients to choose to add to pizza
+			1.4.8.2 - Add a button to add pizza with selected ingredients to order
+	1.5 - Mobile app:
+		1.5.1 - Just start to work on it
+
+
+################################################################################################################################
+To add to to do list:
+	1. Administration
+	2. Database
+	3. API
+	4. Accounting (login system)
+
+################################################################################################################################
+Basic steps on how the app should be made:
+	1. Create basic functionality which doesn't require any kinds of login mechanic
+	2. Add login and sessions
+	3. Add categories of users
+	4. Add additional functionality to admin users
+
+################################################################################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Old ideas:
+
+
+1. Functionality:
+	1.1 - Food catalogue (Menu page)
+	1.2 - Food Basket
+	1.3 - Map page(Locations)
+	1.4 - Main page with top 3 items and a couple of predefined menu sets
+	1.5 - About us page
+	
+1. Work on HTML.
+	1.1 - Food catalogue (Menu page)
+		1.1.1 - One item design
+			1.1.1.1 - Order button
+			1.1.1.2 - Item description
+			1.1.1.3 - Item picture
+			1.1.1.4 - Item options
+		1.1.2 - Left menu with filters
+		1.1.3 - Grid with multiple menu items
+	1.2 - Food Basket
+		1.2.1 - Food order page
+		1.2.1 - Add items to basket
+		1.2.2 - Order button inside food catalogue items
+	1.3 - Map page(Locations)
+	1.4 - Main page
+		1.4.1 - Carousel with top 3 items
+	1.5 - About us page
+
+2. Time to laravel.
+
+3. API.
+	3.1 - Base API mechanic
+		3.1.1 - GET /products/top10
+		3.1.2 - GET /products
+		3.1.3 - GET /products/{producId}
+		3.1.4 - POST /products
+		3.1.5 - PATCH /products/{producId}
+		3.1.6 - DELETE /products/{producId}
+
+

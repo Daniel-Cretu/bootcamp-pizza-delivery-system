@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Festive&family=Lobster&display=swap");
+
+* {
+  font-family: "Lobster", cursive;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-image: url("../img/pizza-background.jpg");
+  background-size: cover;
+  height: 100%;
+  background-attachment: fixed;
+}
+
+body {
+  min-height: 100%;
+  height: auto;
+  background-color: white;
+}
+
+/* HEADER START */
+
+header {
+  background-color: inherit;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+header div {
+  height: 50px;
+}
+
+header div a {
+  color: black;
+}
+
+header div a:hover,
+header div a:active {
+  color: #ffba5a;
+}
+
+#header__logo {
+  max-width: 100%;
+  max-height: 100%;
+  animation: anim_shake 5s infinite;
+}
+
+@keyframes anim_shake {
+  2% {
+    transform: rotate(5deg);
+  }
+  4% {
+    transform: rotate(-5deg);
+  }
+  6% {
+    transform: rotate(5deg);
+  }
+  8% {
+    transform: rotate(-5deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+}
+
+nav ul li {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  height: 100%;
+}
+header nav ul li:hover {
+  color: #ffba5a;
+}
+
+header div nav ul li:hover {
+  border-radius: 10px;
+  color: #ffba5a;
+}
+
+header div .d-none .d-lg-flex {
+  background-color: wheat;
+}
+
+li {
+  white-space: nowrap;
+}
+
+.material-icons,
+.header-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HEADER END */
+
+/* MAIN START */
+
+/* MAIN END */
+
+/* FOOTER START */
+
+footer {
+  background-color: #75543b;
+  color: white;
+}
+
+.footer-info-element-heading {
+  color: #bd9d85;
+}
+
+.copyright {
+  font-size: 16px;
+}
+
+/* FOOTER END */
