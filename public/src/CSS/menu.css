@@ -1,4 +1,4 @@
-#mobile-filter {
+#mobile-anchors {
   position: sticky;
   top: 50px;
   z-index: 3;
@@ -7,9 +7,9 @@
   height: 30px;
 }
 
-#mobile-filter-button {
+.mobile-anchors-button {
   position: relative;
-  top: -70px;
+  top: -60px;
   background: none;
   background-color: #ffba5a;
   border: none;
@@ -28,10 +28,10 @@
   justify-content: center;
 }
 
-#mobile-filter-button:hover,
-#mobile-filter-button:active {
+.mobile-anchors-button:hover,
+.mobile-anchors-button:active {
   position: relative;
-  top: -50px;
+  top: -30px;
 }
 
 .anchor {
