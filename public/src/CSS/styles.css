@@ -96,18 +96,13 @@ li {
 }
 
 .material-icons,
-.header-text {
+.centered-text {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 /* HEADER END */
-
-/* MAIN START */
-
-/* MAIN END */
-
 /* FOOTER START */
 
 footer {
