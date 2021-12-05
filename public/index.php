@@ -13,43 +13,9 @@
 </head>
 
 <body class="container-xxl p-0 d-flex flex-column">
-  <header class="pb-0">
-    <div class="d-flex justify-content-between">
-      <a href="./index.php" class="text-decoration-none px-3">
-        <div class="d-flex flex-row">
-          <img id="header__logo" src="src/img/logo.png" alt="Pizza Slice" />
-          <div class="centered-text d-none d-sm-flex">Pizza Slice</div>
-          <div class="centered-text d-flex d-sm-none">PS</div>
-        </div>
-      </a>
-      <nav class="h-100">
-        <ul class="list-group list-group-horizontal list-unstyled h-100">
-          <li>
-            <a href="./index.php" class="text-decoration-none">
-              <div class="centered-text d-none d-md-flex">Home</div>
-              <div class="material-icons d-flex d-md-none">home</div>
-            </a>
-          </li>
-          <li>
-            <a href="./menu.php" class="text-decoration-none">
-              <div class="centered-text d-none d-md-flex">Menu</div>
-              <div class="material-icons d-flex d-md-none">menu_book</div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-decoration-none">
-              <div class="material-icons">account_circle</div>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-decoration-none">
-              <div class="material-icons">shopping_bag</div>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+
+  <?php include("./src/PHP/origamis/header.php") ?>
+  
   <main id="content" class="p-3 flex-grow-1">
     <div>
       <div id="carouselExampleIndicators" class="carousel slide rounded-3" data-bs-ride="carousel">
@@ -139,27 +105,10 @@
     }
     ?>
   </main>
-  <footer>
-    <div class="p-3">
-      <div class="row">
-        <div class="col-12 col-lg-4">
-          <h5 class="footer-info-element-heading text-center">PS INFO</h5>
-        </div>
-        <div class="col-12 col-lg-4">
-          <h5 class="footer-info-element-heading text-center">PS APP</h5>
-        </div>
-        <div class="col-12 col-lg-4">
-          <h5 class="footer-info-element-heading text-center">PS CARES</h5>
-        </div>
-      </div>
-      <hr />
-      <p class="mb-0">Pizza Slice</p>
-      <p class="copyright">
-        TM & Copyright 2021 Pizza Slice Corporation. All Rights Reserved.
-      </p>
-    </div>
-  </footer>
-  <script src="src/Bootstrap/js/bootstrap.bundle.js"></script>
-</body>
 
+  <?php include("./src/PHP/origamis/footer.php") ?>
+
+  <script src="src/Bootstrap/js/bootstrap.bundle.js"></script>
+  
+</body>
 </html>
